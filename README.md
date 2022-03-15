@@ -14,7 +14,7 @@ Android Studio(Min. required Artic Fox)
 
 Step 1: Open Android Stdio and then click on File -> New -> New project.
 
-Step 2: Then type the Application name as “ex.no.1″ and click Next. 
+Step 2: Then type the Application name as “ex.no.3″ and click Next. 
 
 Step 3: Then select the Minimum SDK as shown below and click Next.
 
