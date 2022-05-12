@@ -68,19 +68,24 @@ public class MainActivity extends AppCompatActivity {
         if(ContextCompat.checkSelfPermission(this , Manifest.permission.READ_CONTACTS)
                 != PackageManager.PERMISSION_GRANTED)
         {
-            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.READ_CONTACTS}, 0) ;
+            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.
+            READ_CONTACTS}, 0) ;
 
         }
         ContentResolver contentResolver = getContentResolver();
         Uri uri= ContactsContract.CommonDataKinds.Phone.CONTENT_URI;
-        @SuppressLint("Recycle") Cursor cursor = contentResolver.query(uri, null , null,null,null);
+        @SuppressLint("Recycle") Cursor cursor = contentResolver.query(uri, null , 
+        null,null,null);
         Log.i("CONTACT_PROVIDER_DEMO","TOTAL # of Contacts ::: "+ cursor.getCount());
         if (cursor.getCount() > 0) {
             while(cursor.moveToNext()){
-                @SuppressLint("Range") String contactName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
-                @SuppressLint("Range") String contactNumber = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+                @SuppressLint("Range") String contactName = cursor.getString(cursor.
+                getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+                @SuppressLint("Range") String contactNumber = cursor.getString(cursor.
+                getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 
-                Log.i("CONTACT_PROVIDER_DEMO","Contact Name :::  "+ contactName+"   PH #   :::"+ contactNumber);
+                Log.i("CONTACT_PROVIDER_DEMO","Contact Name :::  "+ contactName+"   PH #   
+                :::"+ contactNumber);
             }
         }
     }
@@ -92,7 +97,8 @@ public class MainActivity extends AppCompatActivity {
 ### Activity_main.xml
 ```java
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.
+com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
