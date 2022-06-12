@@ -1,6 +1,6 @@
-
-# Ex.No:3 Create Your Own Content Providers to get Contacts details.
-
+### EX NO : 03
+### DATE  : 
+# <p align="center"> Create Your Own Content Providers to get Contacts details </p>
 
 ## AIM:
 
@@ -151,6 +151,9 @@ com/apk/res/android"
 
 ## OUTPUT
 ![output](./static/img/o1e3.png)
+
+</br>
+
 ![output](./static/img/o2e3.png)
 ![output](./static/img/o3e3.png)
 
